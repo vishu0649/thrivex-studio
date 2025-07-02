@@ -166,3 +166,97 @@ a.secondary {
     filter: invert();
   }
 }
+
+/* Hero Section */
+.heroSection {
+  width: 100%;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  padding: 64px 0 48px 0;
+  text-align: center;
+}
+.heroContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.heroTitle {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.heroSubtitle {
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+.heroCta {
+  background: #fff;
+  color: #2575fc;
+  padding: 16px 40px;
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  display: inline-block;
+}
+
+/* Features Section */
+.featuresSection {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 16px 32px 16px;
+  text-align: center;
+}
+.featuresTitle {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.featuresGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.featureCard {
+  flex: 1 1 260px;
+  min-width: 260px;
+  max-width: 320px;
+  background: #f7f7f7;
+  border-radius: 16px;
+  padding: 24px;
+}
+.featureCardTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* CTA Section */
+.ctaSection {
+  width: 100%;
+  background: #2575fc;
+  color: #fff;
+  padding: 48px 0;
+  text-align: center;
+}
+.ctaTitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.ctaSubtitle {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+.ctaButton {
+  background: #fff;
+  color: #2575fc;
+  padding: 14px 36px;
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  display: inline-block;
+}

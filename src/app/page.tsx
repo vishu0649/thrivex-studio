@@ -1,95 +1,62 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Our first project
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
+    <div className={styles.page} style={{ padding: 0 }}>
+      {/* Hero Section */}
+      <section className={styles.heroSection}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>
+            Powerful Landing Pages That Convert
+          </h1>
+          <p className={styles.heroSubtitle}>
+            Launch high-converting landing pages faster, generate qualified leads, and optimize your marketing efforts—all with one simple solution.
+          </p>
           <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#get-started"
+            className={styles.heroCta}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
+            Start my trial
           </a>
         </div>
-      </main>
-      <footer className={styles.footer}>
+      </section>
+
+      {/* Features Section */}
+      <section className={styles.featuresSection}>
+        <h2 className={styles.featuresTitle}>
+          Data-driven lead capture solutions
+        </h2>
+        <div className={styles.featuresGrid}>
+          <div className={styles.featureCard}>
+            <h3 className={styles.featureCardTitle}>Intuitive builder</h3>
+            <p>Create high-converting landing pages without writing a single line of code. Build multiple variations, A/B test, and optimize your results.</p>
+          </div>
+          <div className={styles.featureCard}>
+            <h3 className={styles.featureCardTitle}>Lead enrichment</h3>
+            <p>Unlock the full potential of your leads by automatically adding key details like industry, company size, and location.</p>
+          </div>
+          <div className={styles.featureCard}>
+            <h3 className={styles.featureCardTitle}>A/B Testing</h3>
+            <p>Experiment with different headlines, images, CTAs, and more to continuously optimize your page.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section id="get-started" className={styles.ctaSection}>
+        <h2 className={styles.ctaTitle}>
+          More Leads. More Conversions. Start for Free.
+        </h2>
+        <p className={styles.ctaSubtitle}>
+          Ready to soar past your marketing goals? Try our platform free for 14 days and discover a faster and more powerful lead optimization solution.
+        </p>
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#"
+          className={styles.ctaButton}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+          Sign Up Free
         </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
     </div>
   );
 }
