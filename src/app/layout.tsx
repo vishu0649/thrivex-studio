@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import styles from "./menu.module.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,46 +42,41 @@ function Menu() {
         <Link href="/" style={{ fontWeight: 800, fontSize: 24, color: "#2575fc", textDecoration: "none", marginRight: 32 }}>
           Thrivex Studio
         </Link>
-        <Link href="/" style={{ marginRight: 24 }}>Home</Link>
-        <div style={{ position: "relative", marginRight: 24 }}>
-          <span>Services ▾</span>
-          <div style={{
-            display: "none", // Will show on hover with JS later
-            position: "absolute",
-            top: 32,
-            left: 0,
-            background: "#fff",
-            border: "1px solid #eee",
-            borderRadius: 8,
-            boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
-            minWidth: 220,
-            zIndex: 10
-          }}>
+        <Link href="/" style={{ marginRight: 24, color: "#fff" }}>Home</Link>
+        <div className={styles.dropdownParent} style={{ position: "relative", marginRight: 24 }}>
+          <span style={{ color: "#fff" }}>Services ▾</span>
+          <div className={styles.dropdownMenu}>
             <div style={{ padding: 12, borderBottom: "1px solid #f0f0f0" }}>
-              <b>Podfast</b>
-              <div style={{ fontSize: 14, color: "#666" }}>Fast podcast editing</div>
-              <div style={{ fontSize: 14, color: "#666" }}>Podcast setup & strategy</div>
-              <div style={{ fontSize: 14, color: "#666" }}>Hosting & distribution</div>
+              <Link href="/services/podcast" style={{ color: "#2575fc", fontWeight: 700, textDecoration: 'underline', display: 'block', marginBottom: 4 }}>
+                Podcast Production
+              </Link>
+              <div style={{ fontSize: 14, color: "#222" }}>Fast podcast editing</div>
+              <div style={{ fontSize: 14, color: "#222" }}>Podcast setup & strategy</div>
+              <div style={{ fontSize: 14, color: "#222" }}>Hosting & distribution</div>
             </div>
             <div style={{ padding: 12, borderBottom: "1px solid #f0f0f0" }}>
-              <b>Web Development</b>
-              <div style={{ fontSize: 14, color: "#666" }}>Website design</div>
-              <div style={{ fontSize: 14, color: "#666" }}>Front-end/back-end dev</div>
-              <div style={{ fontSize: 14, color: "#666" }}>E-commerce solutions</div>
+              <Link href="/services/web-development" style={{ color: "#2575fc", fontWeight: 700, textDecoration: 'underline', display: 'block', marginBottom: 4 }}>
+                Web Development
+              </Link>
+              <div style={{ fontSize: 14, color: "#222" }}>Website design</div>
+              <div style={{ fontSize: 14, color: "#222" }}>Front-end/back-end dev</div>
+              <div style={{ fontSize: 14, color: "#222" }}>E-commerce solutions</div>
             </div>
             <div style={{ padding: 12 }}>
-              <b>Video Recording</b>
-              <div style={{ fontSize: 14, color: "#666" }}>Studio rental</div>
-              <div style={{ fontSize: 14, color: "#666" }}>On-site recording</div>
-              <div style={{ fontSize: 14, color: "#666" }}>Editing & post-production</div>
+              <Link href="/services/video-editing" style={{ color: "#2575fc", fontWeight: 700, textDecoration: 'underline', display: 'block', marginBottom: 4 }}>
+                Video Editing
+              </Link>
+              <div style={{ fontSize: 14, color: "#222" }}>Studio rental</div>
+              <div style={{ fontSize: 14, color: "#222" }}>On-site recording</div>
+              <div style={{ fontSize: 14, color: "#222" }}>Editing & post-production</div>
             </div>
           </div>
         </div>
-        <Link href="/portfolio" style={{ marginRight: 24 }}>Portfolio / Work</Link>
-        <Link href="/about-us" style={{ marginRight: 24 }}>About Us</Link>
-        <Link href="/blog" style={{ marginRight: 24 }}>Blog / Resources</Link>
-        <Link href="/pricing" style={{ marginRight: 24 }}>Pricing / Packages</Link>
-        <Link href="/contact" style={{ marginRight: 24 }}>Contact</Link>
+        {/* <Link href="/portfolio" style={{ marginRight: 24, color: "#fff" }}>Portfolio / Work</Link> */}
+        <Link href="/about-us" style={{ marginRight: 24, color: "#fff" }}>About Us</Link>
+        <Link href="/blog" style={{ marginRight: 24, color: "#fff" }}>Blog / Resources</Link>
+        <Link href="/pricing" style={{ marginRight: 24, color: "#fff" }}>Pricing / Packages</Link>
+        <Link href="/contact" style={{ marginRight: 24, color: "#fff" }}>Contact</Link>
         <div style={{ flex: 1 }} />
         <a href="#cta" style={{
           background: "#2575fc",
