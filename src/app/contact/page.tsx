@@ -53,7 +53,7 @@ export default function ContactPage() {
     } catch (error) {
       setSubmitStatus({
         type: 'error',
-        message: 'An error occurred. Please try again.'
+        message: 'An error occurred. Please try again.' + error,
       });
     } finally {
       setIsSubmitting(false);
@@ -63,7 +63,7 @@ export default function ContactPage() {
     <div className={styles.container}>
       <div className={styles.header}>
         <h1>Contact Us</h1>
-        <p>Ready to start your next project? We'd love to hear from you.</p>
+        <p>Ready to start your next project? We&apos;d love to hear from you.</p>
       </div>
 
       <div className={styles.content}>

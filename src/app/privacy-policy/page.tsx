@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
         <section className={styles.section}>
           <h2>1. Introduction</h2>
           <p>
-            Thrivex Studio ("we," "our," or "us") is committed to protecting your privacy. 
+            Thrivex Studio (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. 
             This Privacy Policy explains how we collect, use, disclose, and safeguard your 
             information when you visit our website or use our services.
           </p>
@@ -131,7 +131,7 @@ export default function PrivacyPolicyPage() {
         </section>
 
         <section className={styles.section}>
-          <h2>8. Children's Privacy</h2>
+          <h2>8. Children&apos;s Privacy</h2>
           <p>
             Our services are not intended for children under the age of 13. We do not 
             knowingly collect personal information from children under 13. If you are a 
@@ -154,7 +154,7 @@ export default function PrivacyPolicyPage() {
           <p>
             We may update this Privacy Policy from time to time. We will notify you of 
             any changes by posting the new Privacy Policy on this page and updating the 
-            "Last updated" date. We encourage you to review this policy periodically.
+            &quot;Last updated&quot; date. We encourage you to review this policy periodically.
           </p>
         </section>
 

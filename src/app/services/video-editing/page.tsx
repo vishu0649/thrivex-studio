@@ -50,9 +50,9 @@ export default function VideoEditingServicePage() {
       <section style={{ maxWidth: 900, margin: '0 auto', background: '#fcfcfe', borderRadius: 16, padding: 32, boxShadow: '0 2px 12px rgba(38,87,191,0.06)' }}>
         <h2 style={{ color: '#2575fc', marginBottom: 18, fontSize: 24 }}>Client Success Stories</h2>
         <ul style={{ color: '#222', fontSize: 17, lineHeight: 1.7, paddingLeft: 24, marginBottom: 18 }}>
-          <li>"Our Instagram reels now get 5x more engagement!"</li>
-          <li>"The YouTube edits are so professional—our subscribers love them."</li>
-          <li>"Fast, creative, and always on-brand. Highly recommended!"</li>
+          <li>&quot;Our Instagram reels now get 5x more engagement!&quot;</li>
+          <li>&quot;The YouTube edits are so professional—our subscribers love them.&quot;</li>
+          <li>&quot;Fast, creative, and always on-brand. Highly recommended!&quot;</li>
         </ul>
       </section>
     </div>

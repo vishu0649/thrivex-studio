@@ -7,7 +7,7 @@ export default function AboutUsPage() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>About Thrivex Studio</h1>
-          <p>We're a creative studio passionate about helping businesses grow through innovative digital solutions, podcast production, and video content creation.</p>
+          <p>We&apos;re a creative studio passionate about helping businesses grow through innovative digital solutions, podcast production, and video content creation.</p>
         </div>
       </section>
 
@@ -43,7 +43,7 @@ export default function AboutUsPage() {
             </div>
             <div className={styles.valueCard}>
               <h3>Impact</h3>
-              <p>We measure success by the real impact our work has on our clients' business growth and audience engagement.</p>
+              <p>We measure success by the real impact our work has on our clients&apos; business growth and audience engagement.</p>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ export default function AboutUsPage() {
       <section className={styles.cta}>
         <div className={styles.sectionContent}>
           <h2>Ready to Start Your Project?</h2>
-          <p>Let's work together to bring your vision to life. Get in touch to discuss your project and how we can help you achieve your goals.</p>
+          <p>Let&apos;s work together to bring your vision to life. Get in touch to discuss your project and how we can help you achieve your goals.</p>
           <div className={styles.ctaButtons}>
             <a href="/contact" className={styles.primaryButton}>Get Started</a>
             <a href="/portfolio" className={styles.secondaryButton}>View Our Work</a>

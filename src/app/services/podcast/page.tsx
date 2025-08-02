@@ -49,9 +49,9 @@ export default function PodcastServicePage() {
       <section style={{ maxWidth: 900, margin: '0 auto', background: '#fcfcfe', borderRadius: 16, padding: 32, boxShadow: '0 2px 12px rgba(38,87,191,0.06)' }}>
         <h2 style={{ color: '#2575fc', marginBottom: 18, fontSize: 24 }}>Client Results</h2>
         <ul style={{ color: '#222', fontSize: 17, lineHeight: 1.7, paddingLeft: 24, marginBottom: 18 }}>
-          <li>"Our downloads grew 3x in 6 months after switching to Thrivex Studio!"</li>
-          <li>"The editing quality and launch support are unmatched."</li>
-          <li>"We finally sound like the pros, and our audience noticed!"</li>
+          <li>&quot;Our downloads grew 3x in 6 months after switching to Thrivex Studio!&quot;</li>
+          <li>&quot;The editing quality and launch support are unmatched.&quot;</li>
+          <li>&quot;We finally sound like the pros, and our audience noticed!&quot;</li>
         </ul>
         <div style={{ color: '#444', fontSize: 16 }}>Ready to launch your podcast? <b>Contact us</b> for a free consultation!</div>
       </section>
