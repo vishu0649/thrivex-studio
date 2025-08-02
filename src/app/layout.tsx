@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import styles from "./menu.module.css";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,9 +40,18 @@ function Menu() {
         height: 64,
         gap: 32
       }}>
-        <Link href="/" style={{ fontWeight: 800, fontSize: 24, color: "#2575fc", textDecoration: "none", marginRight: 32 }}>
+        {/* <Link href="/" style={{ fontWeight: 800, fontSize: 24, color: "#2575fc", textDecoration: "none", marginRight: 32 }}>
           Thrivex Studio
-        </Link>
+        </Link> */}
+        <Link href="/" style={{ marginRight: 32, display: "inline-block" }}>
+  <Image
+    src="/logo.png"            
+    alt="Thrivex Studio Logo"
+    width={60}                  
+    height={80}
+    style={{ verticalAlign: "middle" }}
+  />
+</Link>
         <Link href="/" style={{ marginRight: 24, color: "#fff" }}>Home</Link>
         <div className={styles.dropdownParent} style={{ position: "relative", marginRight: 24 }}>
           <span style={{ color: "#fff" }}>Services ▾</span>
@@ -78,7 +88,7 @@ function Menu() {
         <Link href="/pricing" style={{ marginRight: 24, color: "#fff" }}>Pricing / Packages</Link>
         <Link href="/contact" style={{ marginRight: 24, color: "#fff" }}>Contact</Link>
         <div style={{ flex: 1 }} />
-        <a href="#cta" style={{
+        {/* <a href="#cta" style={{
           background: "#2575fc",
           color: "#fff",
           padding: "10px 28px",
@@ -88,7 +98,7 @@ function Menu() {
           textDecoration: "none"
         }}>
           Start Your Project
-        </a>
+        </a> */}
       </div>
     </nav>
   );
